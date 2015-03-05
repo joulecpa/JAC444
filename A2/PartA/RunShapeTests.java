@@ -15,44 +15,13 @@ public class RunShapeTests{
    */
   public static void main(String[] args){
 
-    //The Circle tests
-    Result circleResults = JUnitCore.runClasses(CircleTest.class);
-    System.out.println("The tests for the Circle class");
+    //The Shape tests
+    Result circleResults = JUnitCore.runClasses(ShapeTests.class);
+    System.out.println("The tests for all the Shape classes");
     for (Failure fail : circleResults.getFailures())
       System.out.println(fail);
     if (circleResults.wasSuccessful())
-      System.out.println("Passed all the Circle tests!\n");
+      System.out.println("Passed all the Shape tests!\n");
     
-    //The Square tests
-    Result squareResults = JUnitCore.runClasses(SquareTest.class);
-    System.out.println("The tests for the Square class");
-    for (Failure fail : squareResults.getFailures())
-      System.out.println(fail);
-    if (squareResults.wasSuccessful())
-      System.out.println("Passed all the Square tests!\n");
-
-    //The Rectangle tests
-    Result rectangleResults = JUnitCore.runClasses(RectangleTest.class);
-    System.out.println("The tests for the Rectangle class");
-    for (Failure fail : rectangleResults.getFailures())
-      System.out.println(fail);
-    if (rectangleResults.wasSuccessful())
-      System.out.println("Passed all the Rectangle tests!\n");
-
-    //The Triangle tests
-    Result triangleResults = JUnitCore.runClasses(TriangleTest.class);
-    System.out.println("The tests for the Triangle class");
-    for (Failure fail : triangleResults.getFailures())
-      System.out.println(fail);
-    if (triangleResults.wasSuccessful())
-      System.out.println("Passed all the Triangle tests!\n");
-    
-    //The Parallelogram tests
-    Result parallelogramResults = JUnitCore.runClasses(ParallelogramTest.class);
-    System.out.println("The tests for the Parallelogram class");
-    for (Failure fail : parallelogramResults.getFailures())
-      System.out.println(fail);
-    if (parallelogramResults.wasSuccessful())
-      System.out.println("Passed all the Parallelogram tests!\n");
   }
 }
