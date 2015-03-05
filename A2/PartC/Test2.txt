@@ -1,0 +1,11 @@
+Circle 5
+Square 2
+Rectangle 3 4
+Triangle 3 4 5
+Parallelogram 5 6 7
+Circle 5
+Rectangle 3 4
+Triangle 3 4 5
+Parallelogram 5 6 7
+
+Square 1
